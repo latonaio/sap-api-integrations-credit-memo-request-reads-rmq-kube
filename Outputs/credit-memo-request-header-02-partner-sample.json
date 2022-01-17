@@ -1,0 +1,32 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-credit-memo-request-reads/SAP_API_Caller/caller.go#L65",
+	"function": "sap-api-integrations-credit-memo-request-reads/SAP_API_Caller.(*SAPAPICaller).Header",
+	"level": "INFO",
+	"message": [
+		{
+			"CreditMemoRequest": "60000002",
+			"PartnerFunction": "SH",
+			"Customer": "USCU-CUS07",
+			"Supplier": ""
+		},
+		{
+			"CreditMemoRequest": "60000002",
+			"PartnerFunction": "SP",
+			"Customer": "USCU-CUS07",
+			"Supplier": ""
+		},
+		{
+			"CreditMemoRequest": "60000002",
+			"PartnerFunction": "BP",
+			"Customer": "USCU-CUS07",
+			"Supplier": ""
+		},
+		{
+			"CreditMemoRequest": "60000002",
+			"PartnerFunction": "PY",
+			"Customer": "USCU-CUS07",
+			"Supplier": ""
+		}
+	],
+	"time": "2022-01-08T16:04:31.751443+09:00"
+}
