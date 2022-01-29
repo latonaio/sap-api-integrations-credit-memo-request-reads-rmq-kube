@@ -10,7 +10,9 @@ sap-api-integrations-credit-memo-request-reads-rmq-kube は、主にエッジコ
 ・ エッジ Kubernetes （推奨）    
 ・ AION のリソース （推奨)    
 ・ OS: LinuxOS （必須）    
-・ CPU: ARM/AMD/Intel（いずれか必須）　　
+・ CPU: ARM/AMD/Intel（いずれか必須）  　
+・ RabbitMQ on Kubernetes  
+・ RabbitMQ Client
 
 ## クラウド環境での利用
 sap-api-integrations-credit-memo-request-reads-rmq-kube は、外部システムがクラウド環境である場合にSAPと統合するときにおいても、利用可能なように設計されています。  
@@ -127,7 +129,7 @@ func (c *SAPAPICaller) AsyncGetCreditMemoRequest(creditMemoRequest, creditMemoRe
 }
 ```
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
 以下の sample.json の例は、SAP クレジットメモ依頼 の ヘッダデータ が取得された結果の JSON の例です。  
 以下の項目のうち、"CreditMemoRequest" ～ "to_Item" は、/SAP_API_Output_Formatter/type.go 内 の Type Header {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
 
@@ -147,25 +149,24 @@ func (c *SAPAPICaller) AsyncGetCreditMemoRequest(creditMemoRequest, creditMemoRe
 			"SalesOffice": "",
 			"SalesDistrict": "",
 			"SoldToParty": "USCU-CUS07",
-			"CreationDate": "/Date(1474416000000)/",
-			"CreatedByUser": "CB9980000065",
+			"CreationDate": "2016-09-21T09:00:00+09:00",
 			"LastChangeDate": "",
-			"LastChangeDateTime": "/Date(1474433263752+0000)/",
+			"LastChangeDateTime": "",
 			"PurchaseOrderByCustomer": "",
 			"CustomerPurchaseOrderType": "",
 			"CustomerPurchaseOrderDate": "",
-			"CreditMemoRequestDate": "/Date(1474416000000)/",
+			"CreditMemoRequestDate": "2016-09-21T09:00:00+09:00",
 			"TotalNetAmount": "1000.00",
 			"TransactionCurrency": "USD",
 			"SDDocumentReason": "009",
-			"PricingDate": "/Date(1473811200000)/",
+			"PricingDate": "2016-09-14T09:00:00+09:00",
 			"CustomerTaxClassification1": "",
 			"CustomerAccountAssignmentGroup": "01",
 			"HeaderBillingBlockReason": "",
 			"IncotermsClassification": "EXW",
 			"CustomerPaymentTerms": "0004",
 			"PaymentMethod": "",
-			"BillingDocumentDate": "/Date(1474416000000)/",
+			"BillingDocumentDate": "2016-09-21T09:00:00+09:00",
 			"ReferenceSDDocument": "60000001",
 			"ReferenceSDDocumentCategory": "H",
 			"CreditMemoReqApprovalReason": "",
@@ -178,7 +179,7 @@ func (c *SAPAPICaller) AsyncGetCreditMemoRequest(creditMemoRequest, creditMemoRe
 			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CREDIT_MEMO_REQUEST_SRV/A_CreditMemoRequest('60000002')/to_Item"
 		}
 	],
-	"time": "2022-01-08T16:04:31.032272+09:00"
+	"time": "2022-01-27T23:06:12+09:00"
 }
 ```
 

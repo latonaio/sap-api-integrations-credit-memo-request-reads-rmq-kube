@@ -12,7 +12,7 @@
 			"PurchaseOrderByCustomer": "",
 			"Material": "MZ-FG-E16",
 			"MaterialByCustomer": "",
-			"PricingDate": "/Date(1473811200000)/",
+			"PricingDate": "2016-09-14T09:00:00+09:00",
 			"RequestedQuantity": "2",
 			"RequestedQuantityUnit": "PC",
 			"ItemGrossWeight": "13.700",
@@ -41,5 +41,5 @@
 			"to_PricingElement": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CREDIT_MEMO_REQUEST_SRV/A_CreditMemoRequestItem(CreditMemoRequest='60000002',CreditMemoRequestItem='10')/to_PricingElement"
 		}
 	],
-	"time": "2022-01-08T16:07:38.830473+09:00"
+	"time": "2022-01-27T23:05:10+09:00"
 }

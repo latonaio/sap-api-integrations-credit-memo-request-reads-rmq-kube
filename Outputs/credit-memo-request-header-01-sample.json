@@ -13,25 +13,24 @@
 			"SalesOffice": "",
 			"SalesDistrict": "",
 			"SoldToParty": "USCU-CUS07",
-			"CreationDate": "/Date(1474416000000)/",
-			"CreatedByUser": "CB9980000065",
+			"CreationDate": "2016-09-21T09:00:00+09:00",
 			"LastChangeDate": "",
-			"LastChangeDateTime": "/Date(1474433263752+0000)/",
+			"LastChangeDateTime": "",
 			"PurchaseOrderByCustomer": "",
 			"CustomerPurchaseOrderType": "",
 			"CustomerPurchaseOrderDate": "",
-			"CreditMemoRequestDate": "/Date(1474416000000)/",
+			"CreditMemoRequestDate": "2016-09-21T09:00:00+09:00",
 			"TotalNetAmount": "1000.00",
 			"TransactionCurrency": "USD",
 			"SDDocumentReason": "009",
-			"PricingDate": "/Date(1473811200000)/",
+			"PricingDate": "2016-09-14T09:00:00+09:00",
 			"CustomerTaxClassification1": "",
 			"CustomerAccountAssignmentGroup": "01",
 			"HeaderBillingBlockReason": "",
 			"IncotermsClassification": "EXW",
 			"CustomerPaymentTerms": "0004",
 			"PaymentMethod": "",
-			"BillingDocumentDate": "/Date(1474416000000)/",
+			"BillingDocumentDate": "2016-09-21T09:00:00+09:00",
 			"ReferenceSDDocument": "60000001",
 			"ReferenceSDDocumentCategory": "H",
 			"CreditMemoReqApprovalReason": "",
@@ -44,5 +43,5 @@
 			"to_Item": "https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_CREDIT_MEMO_REQUEST_SRV/A_CreditMemoRequest('60000002')/to_Item"
 		}
 	],
-	"time": "2022-01-08T16:04:31.032272+09:00"
+	"time": "2022-01-27T23:06:12+09:00"
 }
